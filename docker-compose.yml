@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mongodbpcf.web:
+    image: ${DOCKER_REGISTRY-}mongodbpcfweb
+    build:
+      context: .
+      dockerfile: MongoDbPcf.Web/Dockerfile
